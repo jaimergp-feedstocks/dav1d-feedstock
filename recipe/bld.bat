@@ -1,0 +1,13 @@
+@echo on
+
+
+meson setup builddir        ^
+    %MESON_ARGS%            ^
+    --buildtype=release
+if errorlevel 1 exit 1
+
+meson compile -C builddir
+if errorlevel 1 exit 1
+
+meson install -C builddir --no-rebuild
+if errorlevel 1 exit 1

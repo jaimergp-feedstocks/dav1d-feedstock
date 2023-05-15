@@ -15,12 +15,6 @@ source:
 
 build:
   number: 0
-  script:
-    - set -ex
-    - >
-      meson setup _build ${MESON_ARGS__###conda-selector###__unix:---prefix=${PREFIX} --libdir=lib}   --prefix=%LIBRARY_PREFIX%  # [win] --buildtype=release -Denable_tests=false
-    - meson compile -C _build
-    - meson install -C _build --no-rebuild
   run_exports:
     - {{ pin_subpackage( name|lower, max_pin='x.x.x') }}
 
