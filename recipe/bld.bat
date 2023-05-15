@@ -1,8 +1,10 @@
 @echo on
 
 
-meson setup builddir        ^
-    %MESON_ARGS%            ^
+meson setup builddir           ^
+    %MESON_ARGS%               ^
+    --prefix=%LIBRARY_PREFIX%  ^
+    -Denable_tests=false       ^
     --buildtype=release
 if errorlevel 1 exit 1
 
