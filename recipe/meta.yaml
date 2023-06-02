@@ -1,5 +1,5 @@
 {% set name = "dav1d" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 # library version is different from project version
 # Check 'meson.build' upstream in every release!
 {% set so_name = "6.9.0" %}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://code.videolan.org/videolan/dav1d/-/archive/{{ version }}/dav1d-{{ version }}.tar.gz
-  sha256: 88669c6113ddfda068f03bf8e864e4e6a1ea2e2480afec86d1bf91a8c600e79d
+  sha256: 2dd85860d213479672b1c708e31593446e8c2b53ff41e2ca25a2eafb718424e2
 
 build:
   number: 0
