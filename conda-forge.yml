@@ -12,3 +12,4 @@ test: native_and_emulated
 conda_build:
   pkg_format: '2'
 upload_on_branch: main
+conda_build_tool: conda-build+conda-libmamba-solver
