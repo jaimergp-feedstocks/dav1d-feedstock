@@ -3,6 +3,6 @@ c_compiler:
 channel_sources:
 - conda-forge
 channel_targets:
-- conda-forge main
+- jaimergp dav1d-dev
 target_platform:
 - win-64
