@@ -20,7 +20,7 @@ call activate base
 
 :: Provision the necessary dependencies to build the recipe later
 echo Installing dependencies
-mamba.exe install "python=3.10" conda-build conda pip boa conda-forge-ci-setup=3 -c conda-forge --strict-channel-priority --yes
+mamba.exe install "python=3.10" "python=3.11" conda-build conda pip boa conda-forge-ci-setup=3 -c conda-forge --strict-channel-priority --yes
 if errorlevel 1 exit 1
 
 :: Set basic configuration
