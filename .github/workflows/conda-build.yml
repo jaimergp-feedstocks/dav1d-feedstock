@@ -13,19 +13,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - CONFIG: linux_64_
-            UPLOAD_PACKAGES: True
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-            os: ubuntu
           - CONFIG: win_64_
             UPLOAD_PACKAGES: True
             os: windows
-          - CONFIG: osx_64_
-            UPLOAD_PACKAGES: True
-            os: macos
-          - CONFIG: osx_arm64_
-            UPLOAD_PACKAGES: True
-            os: macos
     steps:
 
     - name: Checkout code
